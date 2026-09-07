@@ -1,0 +1,62 @@
+export const projects = [
+  {
+    id: "resume-analyzer",
+    index: "01",
+    name: "AI Resume Analyzer",
+    tagline: "Scoring resumes against real job descriptions, not keyword counts.",
+    description:
+      "An AI-driven evaluation platform that reads a resume and a job description side by side, then scores fit and surfaces concrete skill gaps — built to give candidates feedback an ATS never explains.",
+    stack: ["React.js", "Node.js", "Express.js", "MongoDB", "LLaMA", "Qwen", "Gemini API", "JWT"],
+    highlights: [
+      "Routed evaluation requests across three LLM providers (LLaMA, Qwen, Gemini) to balance cost and quality",
+      "Designed the scoring pipeline to compare resume content against job description requirements section by section",
+      "Secured the API with JWT authentication end to end",
+      "Optimized the MongoDB schema for fast repeated evaluations",
+    ],
+    liveUrl: "https://ai-resume-analyzer-delta-coral.vercel.app/",
+    githubUrl: "https://github.com/krish1245j/ai-resume-analyzer",
+    accentDetail: "Multi-model AI routing",
+    theme: "signal",
+    accentColor: "flux",
+  },
+  {
+    id: "ecommerce",
+    index: "02",
+    name: "Full Stack E-Commerce Platform",
+    tagline: "A store with real permission boundaries between admins and shoppers.",
+    description:
+      "A multi-page storefront with a clean separation between what a shopper can do and what an admin can do — built on an MVC and Service Layer backend so business logic never leaks into route handlers.",
+    stack: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Multer"],
+    highlights: [
+      "Enforced Role-Based Access Control across every admin and user route",
+      "Split business logic into a Service Layer, separate from controllers and routes",
+      "Handled product image uploads with Multer",
+      "Structured the frontend as a secure, multi-page React application",
+    ],
+    liveUrl: null,
+    githubUrl: "https://github.com/kumar-krish",
+    accentDetail: "RBAC across every route",
+    theme: "structure",
+    accentColor: "signal",
+  },
+  {
+    id: "banking",
+    index: "03",
+    name: "Advanced Banking Transaction System",
+    tagline: "Money doesn't get to be eventually consistent.",
+    description:
+      "A REST API system for account processing built around one non-negotiable: every transaction either fully completes or fully fails, with the ledger balanced automatically after each transfer.",
+    stack: ["Node.js", "Express.js", "MongoDB"],
+    highlights: [
+      "Validated every transaction before it touched an account balance",
+      "Automated ledger balancing after each transfer",
+      "Centralized async error handling instead of scattered try/catch blocks",
+      "Optimized queries for reliable, low-latency fund transfers",
+    ],
+    liveUrl: null,
+    githubUrl: "https://github.com/kumar-krish",
+    accentDetail: "Ledger integrity, always",
+    theme: "ledger",
+    accentColor: "accent",
+  },
+];
