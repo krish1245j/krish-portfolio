@@ -1,74 +1,134 @@
-# Krish Kumar — Portfolio
+# Krish Kumar — Developer Portfolio
 
-A premium, animated developer portfolio for Krish Kumar (MERN Stack Developer / Backend Developer / BCA Student), built with React, Tailwind CSS v4, and Framer Motion.
+A modern, responsive and animated personal portfolio website built to showcase my skills, projects, development experience and technical interests.
 
-## Stack
+The portfolio focuses on backend development, full-stack applications, system architecture and AI-powered applications.
 
-- **Vite** — build tool and dev server
-- **React 19**
-- **Tailwind CSS v4** (via `@tailwindcss/vite`, CSS-first theme config — see `src/index.css`)
-- **Framer Motion** — entrance animations, scroll-linked reveals, layout transitions
-- **lucide-react** — icon set (GitHub icon was dropped from lucide for trademark reasons, so a custom inline SVG is used instead: `src/components/icons/GithubIcon.jsx`)
+## 🚀 Live Portfolio
 
-No Three.js, GSAP, or Lenis — the brief allowed them, but Framer Motion plus native scroll covers everything this site needs without the extra bundle weight or a smooth-scroll library fighting the browser's own scrolling.
+> Add your deployed portfolio URL here
 
-## Getting started
+## 👨‍💻 About
 
-```bash
-npm install
-npm run dev       # start local dev server
-npm run build     # production build -> dist/
-npm run preview   # preview the production build locally
-npm run lint       # oxlint
-```
+I'm **Krish Kumar**, a BCA student and MERN Stack Developer with a strong interest in backend development, API design, databases, system architecture and AI-powered applications.
 
-## Project structure
+This portfolio is designed to present my work in a clean and interactive way while highlighting how I approach real-world software systems.
 
-```
-src/
-  components/        # Nav, CustomCursor, ScrollProgress, Loader, ProjectCard, icons/
-  sections/           # One file per page section (Hero, About, Skills, Projects, ...)
-  data/               # profile.js, projects.js, skills.js — all real resume content,
-                       # kept separate from UI so it's easy to update without touching JSX
-  hooks/              # useReducedMotion, useActiveSection, useCountUp
-  index.css           # design tokens (colors, fonts, easing) via Tailwind v4 @theme
-```
+## ✨ Features
 
-## Before you deploy — things to fill in
+- Modern dark-themed developer portfolio
+- Fully responsive design
+- Smooth page and section animations
+- Interactive navigation with active section tracking
+- Animated scroll progress indicator
+- Custom cursor for desktop devices
+- Reduced-motion accessibility support
+- Interactive skill sections
+- Project showcase with technical details
+- System architecture visualization
+- Education and achievements section
+- Resume download
+- GitHub and email integration
+- Mobile-friendly layout
+- Accessible semantic HTML and keyboard navigation
 
-The brief didn't include live deployment URLs, so these are left as clearly marked
-placeholders in `src/data/projects.js` (`liveUrl: null` renders a "Live link coming soon"
-badge instead of a broken link):
+## 🛠️ Tech Stack
 
-- AI Resume Analyzer — live URL
-- Full Stack E-Commerce Platform — live URL
-- Advanced Banking Transaction System — live URL
+### Frontend
 
-Just add the URL string to the relevant project's `liveUrl` field once each one is deployed.
+- React.js
+- Vite
+- Tailwind CSS
+- Framer Motion
+- HTML5
+- CSS3
 
-The resume PDF is served from `public/Krish_Kumar_Resume.pdf` and downloaded via the
-"Resume" buttons in the Hero and Contact sections.
+### Backend & Development
 
-## Design notes
+- Node.js
+- Express.js
+- REST APIs
+- JWT Authentication
+- Role-Based Access Control
+- MVC Architecture
+- Service Layer Architecture
 
-- **Palette**: near-black charcoal (`#0A0B0D`) base, off-white text, one amber/copper
-  accent (`#E8A33D`) — chosen to read as "circuit board / solder," not the more common
-  neon-green-on-black or terracotta-on-cream AI-portfolio defaults.
-- **Type**: Space Grotesk for display headings, Inter for body copy, JetBrains Mono used
-  only where it's functionally meaningful (the architecture diagram, the terminal-style
-  line in Contact) rather than as decoration.
-- **Motion**: one orchestrated entrance sequence in the Hero, scroll-linked reveals in
-  Projects and Architecture, and small purposeful micro-interactions elsewhere (magnetic
-  contact buttons, skill hover relations, nav active-state indicator). `prefers-reduced-motion`
-  is respected globally — the loader is skipped entirely and CSS/JS animation durations
-  collapse to near-zero.
-- **Accessibility**: semantic sectioning, visible focus rings, ARIA label on the hero's
-  SVG diagram, keyboard-operable skill chips, reduced-motion support throughout.
-- **Custom cursor**: only mounts on fine-pointer/hover-capable devices; does nothing on
-  touch, so there's no wasted CPU on mobile.
+### Database & Storage
 
-## Content policy
+- MongoDB
+- Mongoose
+- SQL
+- Cloud Storage
+- File Uploads
 
-Every fact on this site — projects, skills, achievements, education — comes directly from
-the resume supplied. Nothing was invented: no fake companies, clients, testimonials,
-metrics, or job history.
+### DevOps & Tools
+
+- Git
+- GitHub
+- Docker
+- AWS EC2
+- AWS S3
+- AWS IAM
+- Vercel
+- Render
+- Postman
+
+## 📂 Portfolio Sections
+
+### Home
+
+A short introduction highlighting my focus on backend and full-stack development.
+
+### About
+
+An overview of my development approach, interests and the type of systems I like building.
+
+### Skills
+
+A categorized overview of my technical skills including:
+
+- Backend Development
+- Frontend Development
+- Databases & Storage
+- DevOps & Cloud
+- Architecture & Core Concepts
+- Development Tools
+
+### Projects
+
+The portfolio currently showcases three major projects:
+
+#### AI Resume Analyzer
+
+An AI-powered resume evaluation platform that compares resumes against job descriptions and provides meaningful feedback.
+
+**Technologies:** React.js, Node.js, Express.js, MongoDB, JWT, LLaMA, Qwen, Gemini API
+
+#### Full Stack E-Commerce Platform
+
+A full-stack e-commerce application with separate permissions and functionality for administrators and users.
+
+**Technologies:** React.js, Node.js, Express.js, MongoDB, JWT, Multer
+
+#### Advanced Banking Transaction System
+
+A backend-focused banking transaction system designed around reliable account processing and balanced ledger transactions.
+
+**Technologies:** Node.js, Express.js, MongoDB
+
+### System Architecture
+
+A visual representation of how a request moves through a typical backend system:
+
+```text
+Client
+   ↓
+API Layer
+   ↓
+Middleware
+   ↓
+Controller
+   ↓
+Service Layer
+   ↓
+Database
