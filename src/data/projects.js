@@ -54,7 +54,7 @@ export const projects = [
       "Optimized queries for reliable, low-latency fund transfers",
     ],
     liveUrl: null,
-    githubUrl: "https://github.com/kumar-krish",
+    githubUrl: "https://github.com/krish1245j/Advanced_Banking_Transaction",
     accentDetail: "Ledger integrity, always",
     theme: "ledger",
     accentColor: "accent",
