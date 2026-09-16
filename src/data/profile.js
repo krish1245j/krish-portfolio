@@ -13,7 +13,7 @@ export const profile = {
     graduation: "Expected Graduation: 2027",
   },
   achievements: [
-    { value: "100+", label: "DSA problems solved across online judges" },
+    { value: "150+", label: "DSA problems solved across online judges" },
     { value: "3rd", label: "Place in a college-wide coding contest against senior BCA/B.Tech students" },
     { value: "3", label: "Production MERN applications deployed live on Vercel and Render" },
   ],
