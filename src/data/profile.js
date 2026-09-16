@@ -4,7 +4,7 @@ export const profile = {
   location: "Majitha, Punjab, India",
   email: "krish1245j@gmail.com",
   phone: "+91 6283240896",
-  github: "https://github.com/kumar-krish",
+  github: "https://github.com/krish1245j",
   githubLabel: "github.com/kumar-krish",
   resumeUrl: "/Krish_Kumar_Resume.pdf",
   education: {
